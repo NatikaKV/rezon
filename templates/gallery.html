@@ -30,24 +30,24 @@
 
             <div id="da-thumbs" class="da-thumbs portfolio">
                 <div class="post-media_g pitem item-w1 item-h1 cat1">
-                    <a href="uploads/home_01.jpg" data-rel="prettyPhoto[gal]">
-                        <img src="uploads/home_01.jpg" alt="" class="img-responsive">
+                    <a href="{% static "/uploads/home_01.jpg" %}" data-rel="prettyPhoto[gal]">
+                        <img src="{% static "/uploads/home_01.jpg" %}" alt="" class="img-responsive">
                         <div>
                             <i class="flaticon-unlink"></i>
                         </div>
                     </a>
                 </div>
                 <div class="post-media_g pitem item-w1 item-h1 cat2">
-                    <a href="uploads/home_02.jpg" data-rel="prettyPhoto[gal]">
-                        <img src="uploads/home_02.jpg" alt="" class="img-responsive">
+                    <a href="{% static "/uploads/home_02.jpg" %}" data-rel="prettyPhoto[gal]">
+                        <img src="{% static "/uploads/home_02.jpg" %}" alt="" class="img-responsive">
                         <div>
                             <i class="flaticon-unlink"></i>
                         </div>
                     </a>
                 </div>
                 <div class="post-media_g pitem item-w1 item-h1 cat1">
-                    <a href="uploads/home_03.jpg" data-rel="prettyPhoto[gal]">
-                        <img src="uploads/home_03.jpg" alt="" class="img-responsive">
+                    <a href="{% static "/uploads/home_03.jpg" %}" data-rel="prettyPhoto[gal]">
+                        <img src="{% static "/uploads/home_03.jpg" %}" alt="" class="img-responsive">
                         <div>
                             <i class="flaticon-unlink"></i>
                         </div>
@@ -55,24 +55,24 @@
                 </div>
 
                 <div class="post-media_g pitem item-w1 item-h1 cat3">
-                    <a href="uploads/home_04.jpg" data-rel="prettyPhoto[gal]">
-                        <img src="uploads/home_04.jpg" alt="" class="img-responsive">
+                    <a href="{% static "/uploads/home_04.jpg" %}" data-rel="prettyPhoto[gal]">
+                        <img src="{% static "/uploads/home_04.jpg" %}" alt="" class="img-responsive">
                         <div>
                             <i class="flaticon-unlink"></i>
                         </div>
                     </a>
                 </div>
                 <div class="post-media_g pitem item-w1 item-h1 cat2">
-                    <a href="uploads/home_05.jpg" data-rel="prettyPhoto[gal]">
-                        <img src="uploads/home_05.jpg" alt="" class="img-responsive">
+                    <a href="{% static "/uploads/home_05.jpg" %}" data-rel="prettyPhoto[gal]">
+                        <img src="{% static "/uploads/home_05.jpg" %}" alt="" class="img-responsive">
                         <div>
                             <i class="flaticon-unlink"></i>
                         </div>
                     </a>
                 </div>
                 <div class="post-media_g pitem item-w1 item-h1 cat1">
-                    <a href="uploads/home_06.jpg" data-rel="prettyPhoto[gal]">
-                        <img src="uploads/home_06.jpg" alt="" class="img-responsive">
+                    <a href="{% static "/uploads/home_06.jpg" %}" data-rel="prettyPhoto[gal]">
+                        <img src="{% static "/uploads/home_06.jpg" %}" alt="" class="img-responsive">
                         <div>
                             <i class="flaticon-unlink"></i>
                         </div>
@@ -101,7 +101,7 @@
 								
                             </div>
                             <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
+                                <img src="{% static "/uploads/testi_01.png" %}" alt="" class="img-responsive alignleft">
                                 <h4>James Fernando <small>- Manager of Racer</small></h4>
                             </div>
                             <!-- end testi-meta -->
@@ -114,7 +114,7 @@
                                 <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
                             </div>
                             <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-responsive alignleft">
+                                <img src="{% static "/uploads/testi_02.png" %}" alt="" class="img-responsive alignleft">
                                 <h4>Jacques Philips <small>- Designer</small></h4>
                             </div>
                             <!-- end testi-meta -->
@@ -175,4 +175,8 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
+    <script>
+    $('.menu_el').removeClass('active');
+    $('.gallery-menu').addClass('active');
+</script>
 {% endblock content %}
